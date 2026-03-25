@@ -17,5 +17,16 @@ class program
         Console.WriteLine("Business : " + Kode.getKodePaket("Business"));
         Console.WriteLine("Student : " + Kode.getKodePaket("Student"));
         Console.WriteLine("Traveler : " + Kode.getKodePaket("Traveler"));
+
+        Console.WriteLine();
+        MesinKopi mesin = new MesinKopi();
+
+        mesin.PowerOn();
+        mesin.StartBrewing();
+        mesin.finishBrewing();
+        mesin.StartMaintanance();
+        mesin.FinishMaintanace();
+        mesin.PowerOff();
+        mesin.StartBrewing();
     }
 }
